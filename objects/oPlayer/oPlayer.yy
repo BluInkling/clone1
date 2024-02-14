@@ -31,13 +31,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "squidboy",
-    "path": "sprites/squidboy/squidboy.yy",
-  },
-  "spriteMaskId": {
-    "name": "squidboy",
-    "path": "sprites/squidboy/squidboy.yy",
-  },
+  "spriteId": null,
+  "spriteMaskId": null,
   "visible": true,
 }

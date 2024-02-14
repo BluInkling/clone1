@@ -32,10 +32,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "squidgirl",
-    "path": "sprites/squidgirl/squidgirl.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }
