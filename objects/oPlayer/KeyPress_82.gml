@@ -1,6 +1,0 @@
-
-
-
-
-
-game_restart()
