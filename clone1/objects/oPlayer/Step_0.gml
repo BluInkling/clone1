@@ -1,14 +1,22 @@
 image_speed = 0
 p = 0
 
+if (keyboard_check(vk_shift)){
+	spd = 4
+	imgspd = 3
+} else spd = 2 imgspd = 2
+
+
+
+
 if (keyboard_check(ord("D")))
 {
 	p=1
 	image_xscale = 1
 	sprite_index = squidboy
-	image_speed = 2
-	if (!place_meeting(x+2,y,oWall)){
-		x += 2; //+	
+	image_speed = imgspd
+	if (!place_meeting(x+spd,y,oWall)){
+		x += spd; //+	
 		colliding = false
 	} else show_debug_message("x COLLIDING") colliding = true
 } 
@@ -17,9 +25,9 @@ if (keyboard_check(ord("W")))
 {
 	p=1
 	sprite_index = squidboyup
-	image_speed = 2
-	if (!place_meeting(x,y-2,oWall)){
-		y -= 2; //-
+	image_speed = imgspd
+	if (!place_meeting(x,y-spd,oWall)){
+		y -= spd; //-
 	} else show_debug_message("y COLLIDING")
 	
 }
@@ -30,9 +38,9 @@ if (keyboard_check(ord("S")))
 {
 	p = 1
 	sprite_index = squidboy
-	image_speed = 2
-	if (!place_meeting(x,y+2,oWall)){
-		y += 2; //-
+	image_speed = imgspd
+	if (!place_meeting(x,y+spd,oWall)){
+		y += spd; //-
 	} else show_debug_message("y COLLIDING")
 }
 
@@ -42,9 +50,9 @@ if (keyboard_check(ord("A")))
 	p=1
 	image_xscale = -1
 	sprite_index = squidboy
-	image_speed = 2
-	if (!place_meeting(x-2,y,oWall)){
-		x -= 2; //-
+	image_speed = imgspd
+	if (!place_meeting(x-spd,y,oWall)){
+		x -= spd; //-
 		colliding = false
 	} else show_debug_message("x COLLIDING") colliding = true
 } 
@@ -64,13 +72,13 @@ if colliding == true and place_meeting(x,y-2,oDoor){
 //	instance_destroy(oDoor)
 //}
 
-if colliding == true and (place_meeting(x+2,y,oNPC1) or place_meeting(x-2,y,oNPC1) or place_meeting(x,y+2,oNPC1) or place_meeting(x,y-2,oNPC1)){
+if colliding == true and (place_meeting(x+spd,y,oNPC1) or place_meeting(x-spd,y,oNPC1) or place_meeting(x,y+spd,oNPC1) or place_meeting(x,y-spd,oNPC1)){
 	global.touchnpc = true
 	show_debug_message("NPC COLLIDING")
 	
 } else global.touchnpc = false
 
-if colliding == true and (place_meeting(x+2,y,oNPC2) or place_meeting(x-2,y,oNPC2) or place_meeting(x,y+2,oNPC2) or place_meeting(x,y-2,oNPC2)){
+if colliding == true and (place_meeting(x+spd,y,oNPC2) or place_meeting(x-spd,y,oNPC2) or place_meeting(x,y+spd,oNPC2) or place_meeting(x,y-spd,oNPC2)){
 	global.touchnpc2 = true
 	show_debug_message("NPC 2 COLLIDING")
 	

@@ -1,4 +1,8 @@
 {
   "FolderOrderSettings": [],
-  "ResourceOrderSettings": [],
+  "ResourceOrderSettings": [
+    {"name":"sBackddrop1","order":2,"path":"sprites/sBackddrop1/sBackddrop1.yy",},
+    {"name":"sStartButton","order":1,"path":"sprites/sStartButton/sStartButton.yy",},
+    {"name":"oStartbutton","order":1,"path":"objects/oStartbutton/oStartbutton.yy",},
+  ],
 }

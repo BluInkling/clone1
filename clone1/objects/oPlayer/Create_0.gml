@@ -8,6 +8,7 @@ left = 0
 up = 0
 down = 0
 
+imgspd = 2
 p=1
 global.haskey = false
 global.showmes1 = false
