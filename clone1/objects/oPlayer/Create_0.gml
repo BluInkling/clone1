@@ -19,3 +19,6 @@ global.touchnpc2 = false
 
 colliding = false
 touchdoor = false
+
+global.flipswitch = 0;
+touchswitch = false;

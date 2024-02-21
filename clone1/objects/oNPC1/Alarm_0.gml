@@ -5,3 +5,8 @@
 if global.touchnpc{
 	global.showmes1 = true
 }
+
+
+if global.touchnpcp2{
+	global.showmes1p2 = true
+}

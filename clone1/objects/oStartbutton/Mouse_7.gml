@@ -1,6 +1,6 @@
+audio_play_sound(fnf_notification,1,false);
+room_goto(2)
 
-room_goto(1)
-show_debug_message(string(image_index))
 
 
 
