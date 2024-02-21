@@ -63,7 +63,8 @@ if colliding == true and place_meeting(x,y-spd,oDoor){
 	show_debug_message("DOOR COLLIDING")
 	if global.haskeyp2{
 		audio_play_sound(alright,1,false)
-		instance_destroy(oDoor)
+		instance_destroy(instance_nearest(x,y,oDoor))
+		global.openedp2 = true;
 	}
 } 
 

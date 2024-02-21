@@ -22,3 +22,5 @@ touchdoor = false
 
 global.flipswitch = 0;
 touchswitch = false;
+
+global.openedp1 = false;
